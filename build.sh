@@ -15,8 +15,6 @@ RELEASE="$(rpm -E %fedora)"
 # this installs a package from fedora repos
 rpm-ostree install screen
 rpm-ostree install distrobox
-rpm-ostree install nerd-fonts-Agave
-rpm-ostree install nerd-fonts-CascadiaCode
 rpm-ostree install syncthing
 rpm-ostree install alacritty
 
