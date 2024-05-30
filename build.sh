@@ -17,6 +17,10 @@ rpm-ostree install screen
 rpm-ostree install distrobox
 rpm-ostree install syncthing
 rpm-ostree install alacritty
+rpm-ostree install river 
+rpm-ostree install waybar
+rpm-ostree install dunst
+rpm-ostree install fuzzel
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
