@@ -20,6 +20,7 @@ rpm-ostree install nerd-fonts-Agave
 rpm-ostree install nerd-fonts-CascadiaCode
 rpm-ostree install restic
 rpm-ostree install rclone
+rpm-ostree install chezmoi
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
