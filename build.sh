@@ -14,11 +14,8 @@ RELEASE="$(rpm -E %fedora)"
 
 # this installs a package from fedora repos
 rpm-ostree install screen
-rpm-ostree install neovim
-rpm-ostree install btop
 rpm-ostree install syncthing
 rpm-ostree install distrobox
-rpm-ostree install autojump
 rpm-ostree install nerd-fonts-Agave
 rpm-ostree install nerd-fonts-CascadiaCode
 rpm-ostree install restic
