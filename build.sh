@@ -21,6 +21,9 @@ rpm-ostree install river
 rpm-ostree install waybar
 rpm-ostree install dunst
 rpm-ostree install fuzzel
+rpm-ostree install rclone 
+rpm-ostree install restic 
+rpm-ostree install chezmoi
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
