@@ -148,3 +148,13 @@ jobs:
           TAGS: ${{ steps.push.outputs.digest }}
           COSIGN_EXPERIMENTAL: false
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
+
+      - name: Build Container Installer
+        uses: JasonN3/build-container-installer@v1.2.0
+        with: 
+            image_name: ba-amir-ublue
+            image_repo: ghcr.io/ba-amir/ublue-os:sha256-17dd628ac4684761a1da23e989e94d719e06ed370228f0d68d712d2791acc04e.sig
+            variant: Kinoite
+            iso_name: build/ublue.iso
+             
+            
