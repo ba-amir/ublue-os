@@ -17,6 +17,7 @@ rpm-ostree install screen
 rpm-ostree install syncthing
 rpm-ostree install alacritty
 rpm-ostree install zsh
+rpm-ostree install neovim
 rpm-ostree install river 
 rpm-ostree install waybar
 rpm-ostree install dunst
