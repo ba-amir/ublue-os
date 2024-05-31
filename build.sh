@@ -16,10 +16,13 @@ RELEASE="$(rpm -E %fedora)"
 rpm-ostree install screen
 rpm-ostree install syncthing
 rpm-ostree install alacritty
+rpm-ostree install zsh
 rpm-ostree install river 
 rpm-ostree install waybar
 rpm-ostree install dunst
 rpm-ostree install fuzzel
+rpm-ostree install restic
+rpm-ostree install rclone
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
