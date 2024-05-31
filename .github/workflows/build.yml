@@ -153,8 +153,20 @@ jobs:
         uses: JasonN3/build-container-installer@v1.2.0
         with: 
             image_name: ba-amir-ublue
-            image_repo: ghcr.io/ba-amir/ublue-os
+            image_repo: ghcr.io/ba-amir/ublue-os:sha256-7f123c5f7c6d8e0f7597016d5bd6c89a3cbbfdaf6f42de17296ca3452f421c62.sig
             variant: Kinoite
             iso_name: build/ublue.iso
+
+      - name: Upload ISO as artifact
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.iso_name }}
+           path:|
+                  ${{ steps.build.outputs.iso_path }}
+                  ${{ steps.build.outputs.iso_path }}-CHECKSUM
+          if-no-files-found: error
+          retention-days: 0
+          compression-level: 0
              
             
