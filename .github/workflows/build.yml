@@ -152,7 +152,7 @@ jobs:
       - name: Build Container Installer
         uses: JasonN3/build-container-installer@v1.2.0
         with: 
-              image_repo: ghcr.io/ba-amir/ublue-os
+              image_repo: ghcr.io/ba-amir
               image_tag: latest
               image_name: ublue-os
               variant: Kinoite
