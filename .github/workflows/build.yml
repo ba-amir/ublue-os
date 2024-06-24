@@ -150,7 +150,7 @@ jobs:
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
 
       - name: Build Container Installer
-        uses: JasonN3/build-container-installer@v1.2.0
+        uses: JasonN3/build-container-installer@v1.2.1
         with: 
               image_repo: ghcr.io/ba-amir
               image_tag: latest
